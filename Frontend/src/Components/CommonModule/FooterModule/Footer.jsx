@@ -13,8 +13,7 @@ export const Footer = () => {
         <footer className={Styles.footer}>
             {/* Left */}
             <div className={Styles.left}>
-                <div className={Styles.logoBox} />
-                <span className={Styles.footerText}>A Community Initiative</span>
+                <img src="/Footer_title.svg" alt="WallGodds Footer Title" className={Styles.footerTitle} />
             </div>
 
             {/* Right */}
