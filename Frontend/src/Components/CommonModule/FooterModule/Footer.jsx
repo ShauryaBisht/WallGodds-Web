@@ -11,15 +11,15 @@ export const Footer = () => {
 
     return (
         <footer className={Styles.footer}>
-            {/* Left */}
+            {/* Left section */}
             <div className={Styles.left}>
                 <img src="/Footer_title.svg" alt="WallGodds Footer Title" className={Styles.footerTitle} />
             </div>
 
-            {/* Right */}
+            {/* Right section */}
             <div className={Styles.socials}>
                 {socialLinks.map((link, index) => (
-                    <a href={link.url} title={`WallGodds's ${link.name}`} target="_blank" aria-label={link.name} className={Styles.iconBtn} key={index}>
+                    <a key={index} href={link.url} title={`WallGodds's ${link.name}`} target="_blank" aria-label={link.name} rel="" className={Styles.iconBtn}>
                         <img src={link.path} alt={link.name} />
                     </a>
                 ))}
