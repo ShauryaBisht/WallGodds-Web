@@ -131,7 +131,8 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-        <Desktop />
+
+        {activeDevice === "desktop" && <Desktop />}
 
         <div className={Styles.footerWrapper}>
           <Footer />
