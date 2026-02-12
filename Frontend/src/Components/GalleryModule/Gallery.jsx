@@ -116,6 +116,7 @@ const Gallery = () => {
         </div>
 
         <div className={Styles.temp}>
+          {/* Categories */}
           <div
             ref={sliderRef}
             className={Styles.scrollItems}
@@ -136,16 +137,19 @@ const Gallery = () => {
           </div>
         </div>
 
-        {activeDevice === "desktop" && <Desktop />}
-        {activeDevice === "mobile" && <Mobile />}
-        <Routes>
-          <Route path="desktop" element={<Desktop />} />
-          <Route path="tablet" element={<Tablet />} />
-        </Routes>
+        <div className={Styles.galleryScrollArea}>
+          {activeDevice === "desktop" && <Desktop />}
+          {activeDevice === "mobile" && <Mobile />}
+          
+          <Routes>
+            <Route path="desktop" element={<Desktop />} />
+            <Route path="tablet" element={<Tablet />} />
+          </Routes>
 
-        <div className={Styles.footerWrapper}>
-          <Footer />
-        </div>
+          <div className={Styles.footerWrapper}>
+            <Footer />
+          </div>
+        </div> 
       </div>
     </>
   );
