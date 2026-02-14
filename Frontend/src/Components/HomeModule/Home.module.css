@@ -125,9 +125,9 @@
         display: block;
     }
 
-    .footerWrapper {
+    /* .footerWrapper {
         display: none;
-    }
+    } */
 
     .container {
         height: 100dvh;

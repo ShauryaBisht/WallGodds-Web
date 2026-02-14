@@ -24,6 +24,10 @@ const NavBar = () => {
     if (searchOpen) searchRef.current?.focus();
   }, [searchOpen]);
 
+  useEffect(() => {
+    searchRef.current?.blur();
+  },[isDark]);
+
   return (
     <div className={Style.navbar}>
       <div className={Style.logo}>
